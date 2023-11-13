@@ -1,0 +1,69 @@
+.favorites {
+    background-color: #cfc787;
+    padding: 20px;
+    text-align: center;
+}
+
+.favorites .heading {
+    font-size: 3rem;
+    padding: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.favorites .heading span {
+    color: rgb(252, 118, 69);
+}
+
+.favorite-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.favorite-box {
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: #f5f5f5;
+    flex: 1 1 30rem;
+}
+
+.favorite-box .content {
+    padding: 1.5rem;
+}
+
+.favorite-box img {
+    height: 20rem;
+    margin: 8rem 2rem;
+}
+
+.favorite-box .content h3 {
+    color: #000;
+    font-size: 2.5rem;
+}
+
+.favorite-box .content .price {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+
+.favorite-box .content .price span {
+    color: #000;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.favorite-box .content .stars {
+    padding-bottom: 1rem;
+}
+
+.favorite-box .content .stars i {
+    font-size: 1.7rem;
+    color: orangered;
+}
