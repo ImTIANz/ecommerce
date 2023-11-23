@@ -70,3 +70,24 @@ inputs.forEach((input) => {
   input.addEventListener("blur", blurFunc);
 });
 
+var currentSlide = 0;
+
+    // Example function for navigating to the next slide
+    function nextSlide() {
+        var boxContainer = document.querySelector('.box-container');
+        currentSlide = (currentSlide + 1) % boxContainer.children.length;
+        updateSlidePosition();
+    }
+
+    // Example function for navigating to the previous slide
+    function prevSlide() {
+        var boxContainer = document.querySelector('.box-container');
+        currentSlide = (currentSlide - 1 + boxContainer.children.length) % boxContainer.children.length;
+        updateSlidePosition();
+    }
+
+    function updateSlidePosition() {
+        var boxContainer = document.querySelector('.box-container');
+        var translateValue = -currentSlide * 100 + '%';
+        boxContainer.style.transform = 'translateX(' + translateValue + ')';
+    }
