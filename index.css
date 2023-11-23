@@ -36,7 +36,7 @@ header{
     left: 0;
     right: 0;
     z-index: 1000;
-    background: #E0DAA4; /* NAVBAR BG COLOR*/
+    background: #f9f9f9; /* NAVBAR BG COLOR*/
     padding: 2rem 9%;
     display: flex;
     align-items: center;
@@ -78,11 +78,27 @@ header .icons a:hover{
 section{
     padding: 2rem 9%;
 }
-.home{
-    padding: 0;
-    position: relative;
-    background-color: #cfc787; /* HOME BG COLOR*/
+/* Modify the background for the desired sections with gradient */
+.home {
+    background: linear-gradient(to bottom, #E2AC6B, #E0D2B4); /* Vertical gradient background color */
 }
+
+.product {
+    background: linear-gradient(to bottom,  #E0D2B4, #E2AC6B); /* Vertical gradient background color */
+}
+
+.featured {
+    background: linear-gradient(to bottom, #E2AC6B, #E0D2B4); /* Vertical gradient background color */
+}
+
+.blog {
+    background: linear-gradient(to bottom, #E0D2B4, #E2AC6B); /* Vertical gradient background color */
+}
+
+.contact {
+    background: linear-gradient(to bottom, #E2AC6B, #E0D2B4); /* Vertical gradient background color */
+}
+
 .home .slide-container .slide{
     min-height: 100vh;
     display: flex;
@@ -188,7 +204,7 @@ section{
     text-transform: uppercase;
 }
 .heading span{
-    color: rgb(252, 118, 69);
+    color: rgb(0, 0, 0);
 }
 .product{
     background-color: #cfc787;
@@ -546,3 +562,29 @@ footer {
    
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.exit-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.image-viewer {
+    max-width: 100%;
+    max-height: 100%;
+}
